@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spotify-clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+
+  <body>
+    <div class="container border flex">
+      <div class="left border">
+        <div class="home border bg-grey rounded">
+          <div class="logo">
+            <img class="invert" src="logo.svg" alt="logo svg" />
+          </div>
+          <ul>
+            <li><img class="invert" src="home.svg" alt="home svg" />Home</li>
+            <li>
+              <img class="invert" src="search.svg" alt="search svg" />Search
+            </li>
+          </ul>
+        </div>
+        <div class="library border bg-grey rounded">
+          <div class="heading">
+            <img class="invert" src="library.svg" alt="library svg" />
+            <h2>Your Library</h2>
+          </div>
+          <div class="songList">
+            <ul></ul>
+          </div>
+          <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/">
+                <span>Legal</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                <span>Safety & Privacy Center</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                <span>Privacy Policy</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                <span>Cookies</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                <span>About Ads</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/accessibility/">
+                <span>Accessibility</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right border">
+        <div class="top border">
+          <div class="left border">
+            <img class="invert" src="left.svg" alt="left arrow svg" />
+            <img class="invert" src="right.svg" alt="right arrow svg" />
+          </div>
+          <div class="right border">
+            <button class="signup btn invert">Sign up</button>
+            <button class="login btn">Log in</button>
+          </div>
+        </div>
+        <div class="center border rounded bg-grey">
+          <div class="collection border">
+            <div class="head border">
+              <div class="headLeft">
+                <h2>Popular Artists</h2>
+              </div>
+              <div class="headRight">
+                <p>Show all</p>
+              </div>
+            </div>
+            <div class="cardContainer border">
+              <div class="card border">
+                <img
+                  class="raidus-circle"
+                  src="./images/artist1.jpeg"
+                  alt="artist1"
+                />
+                <h3>Pritam</h3>
+                <p>Artist</p>
+              </div>
+              <div class="card border">
+                <img
+                  class="raidus-circle"
+                  src="./images/artist2.jpeg"
+                  alt="artist1"
+                />
+                <h3>Arijit Singh</h3>
+                <p>Artist</p>
+              </div>
+              <div class="card border">
+               <img
+                  class="raidus-circle"
+                  src="./images/artist3.jpeg"
+                  alt="artist1"
+                />
+                <h3>A.R. Rehman</h3>
+                <p>Artist</p>
+              </div>
+              <div class="card border">
+               <img
+                  class="raidus-circle"
+                  src="./images/artist4.jpeg"
+                  alt="artist1"
+                />
+                <h3>Sachin-Jigar</h3>
+                <p>Artist</p>
+              </div>
+              <div class="card border">
+               <img
+                  class="raidus-circle"
+                  src="./images/artist5.jpeg"
+                  alt="artist1"
+                />
+                <h3>Anirudh Ravichander</h3>
+                <p>Artist</p>
+              </div>
+              <div class="card border">
+               <img
+                  class="raidus-circle"
+                  src="./images/artist6.jpeg"
+                  alt="artist1"
+                />
+                <h3>Vishal Mishra</h3>
+                <p>Artist</p>
+              </div>
+            </div>
+          </div>
+          <div class="collection border">
+            <div class="head border">
+              <div class="headLeft">
+                <h2>Popular albums</h2>
+              </div>
+              <div class="headRight">
+                <p>Show all</p>
+              </div>
+            </div>
+            <div class="cardContainer border">
+              <div class="card border">
+                <img class="rounded" src="./images/albums1.jpeg" alt="artist1" />
+                <h3>Aashiqui 2</h3>
+                <p>Mithoon, Ankit tiwari , Jeet Ganguly</p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/albums2.jpeg" alt="artist1" />
+                <h3>Making Memories</h3>
+                <p>Karan Aujla, Ikky</p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/albums3.jpeg" alt="artist1" />
+                <h3>Ek tha raja</h3>
+                <p>Badshah</p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/albums4.jpeg" alt="artist1" />
+                <h3>Moosetape</h3>
+                <p>Sidhu Moose Wala</p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/albums5.jpeg" alt="artist1" />
+                <h3>Animal</h3>
+                <p>Manan Bhardwaj, Vishal Mishra, Jaani</p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/albums6.jpeg" alt="artist1" />
+                <h3>Sajni (from "Laapataa Ladies")</h3>
+                <p>Ram Sampath, Arijit Singh, Prashant Pandey</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="collection border">
+            <div class="head border">
+              <div class="headLeft">
+                <h2>Popular Radio</h2>
+              </div>
+              <div class="headRight">
+                <p>Show all</p>
+              </div>
+            </div>
+            <div class="cardContainer border">
+              <div class="card border">
+               <img
+               class="rounded"
+                  src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4YRxDV8wJFPHPTeXepOstw/en-GB"
+                  alt="artist1"
+                />
+                <p>With Neha Kakkar, Pritam, KK and more</p>
+              </div>
+              <div class="card border">
+               <img
+               class="rounded"  
+                  src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/3m49WVMU4zCkaVEKb8kFW7/en-GB"
+                  alt="artist1"
+                />
+                <p>
+                  With S. Janaki, S. P. Balasubrahmanyam, P. Susheela and more
+                </p>
+              </div>
+              <div class="card border">
+               <img
+               class="rounded"  
+                  src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/0oOet2f43PA68X5RxKobEy/en-GB"
+                  alt="artist1"
+                />
+                <p>With Sonu Nigam, Sunidhi Chauhan, Shaan and more</p>
+              </div>
+              <div class="card border">
+               <img
+               class="rounded"  
+                  src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/1mYsTxnqsietFxj1OgoGbG/en-GB"
+                  alt="artist1"
+                />
+                <p>
+                  With Shankar Mahadevan, Anirudh Ravichander, Yuvan Shankar
+                  Raja and more
+                </p>
+              </div>
+              <div class="card border">
+               <img
+               class="rounded"  
+                  src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/2FKWNmZWDBZR4dE5KX4plR/en-GB"
+                  alt="artist1"
+                />
+                <p>With Garry Sandhu, Ranjit Bawa, Amrinder Gill and more</p>
+              </div>
+              <div class="card border">
+               <img
+               class="rounded"  
+                  src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4fEkbug6kZzzJ8eYX6Kbbp/en-GB"
+                  alt="artist1"
+                />
+                <p>With Mohit Chauhan, Ankit Tiwari, Javed Ali and more</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="collection border">
+            <div class="head border">
+              <div class="headLeft">
+                <h2>Popular Charts</h2>
+              </div>
+              <div class="headRight">
+                <p>Show all</p>
+              </div>
+            </div>
+            <div class="cardContainer border">
+              <div class="card border">
+                <img class="rounded" src="./images/charts1.jpg" alt="artist1" />
+                <p>
+                  Your weekly update of the most played tracks right now -
+                  Global.
+                </p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/charts2.jpg" alt="artist1" />
+                <p>
+                  Your weekly update of the most played tracks right now - USA.
+                </p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/charts3.jpg" alt="artist1" />
+                <p>
+                  Your daily update of the most played tracks right now -
+                  Global.
+                </p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/charts4.jpg" alt="artist1" />
+                <p>
+                  Your daily update of the most played tracks right now - USA.
+                </p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/charts5.jpg" alt="artist1" />
+                <p>
+                  Your daily update of the most viral tracks right now - Global.
+                </p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/charts6.jpg" alt="artist1" />
+                <p>
+                  Your daily update of the most viral tracks right now - USA.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="collection border">
+            <div class="head border">
+              <div class="headLeft">
+                <h2>Zzzzzz</h2>
+              </div>
+              <div class="headRight">
+                <p>Show all</p>
+              </div>
+            </div>
+            <div class="cardContainer border">
+              <div class="card border">
+                <img class="rounded" src="./images/zzz1.jpeg" alt="artist1" />
+                <p>Soothing, minimalist ambient for deep sleep.</p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/zzz2.jpeg" alt="artist1" />
+                <p>
+                  Sleep with sounds of pouring rain and occasional rolling
+                  thunder.
+                </p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/zzz3.jpeg" alt="artist1" />
+                <p>Let these calm Jazz tracks lull you to sleep.</p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/zzz4.jpeg" alt="artist1" />
+                <p>Gentle Ambient piano to help you fall asleep.</p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/zzz5.jpeg" alt="artist1" />
+                <p>
+                  Wander into the magical mix of music, water, birds, and
+                  calmness.
+                </p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/zzz6.jpeg" alt="artist1" />
+                <p>Instrumental beats for a restful night's sleep.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="collection border">
+            <div class="head border">
+              <div class="headLeft">
+                <h2>Trending Episodes</h2>
+              </div>
+              <div class="headRight">
+                <p>Show all</p>
+              </div>
+            </div>
+            <div class="cardContainer border">
+              <div class="card border">
+                <img class="rounded" src="./images/episodes1.jpeg" alt="artist1" />
+                <h3>Welcome back, RJ Balaji - Naallanaa Murukku</h3>
+                <p>Jun 2021 • 15 min</p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/episodes2.jpeg" alt="artist1" />
+                <h3>#73: Hotel Of Horrors (Serial Killer - H. H. Holmes)</h3>
+                <p>Jun 2021 • 93 min</p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/episodes3.jpeg" alt="artist1" />
+                <h3>Anubis : God of Death - Part 2</h3>
+                <p>Jun 2021 • 16 min</p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/episodes4.jpeg" alt="artist1" />
+                <h3>Anubis : God of Death - Part 1</h3>
+                <p>Jun 2021 • 13 min</p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/episodes5.jpeg" alt="artist1" />
+                <h3>Mahabharata Episode 1: Beginnings</h3>
+                <p>Apr 2014 • 24 min</p>
+              </div>
+              <div class="card border">
+                <img class="rounded" src="./images/episodes6.jpeg" alt="artist1" />
+                <h3>Ep 8 - Ye Na Thi Hamari Qismat</h3>
+                <p>Aug 2020 • 3 min</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom flex">
+          <div class="box box1">
+            <ul>
+              <h3>Company</h3>
+              <li>About</li>
+              <li>Jobs</li>
+              <li>For the Record</li>
+            </ul>
+          </div>
+          <div class="box box2">
+            <ul>
+              <h3>Communities</h3>
+              <li>For Artists</li>
+              <li>Developers</li>
+              <li>Advertising</li>
+              <li>Investors</li>
+              <li>Vendors</li>
+            </ul>
+          </div>
+          <div class="box box3">
+            <ul>
+              <h3>Useful links</h3>
+              <li>Support</li>
+              <li>Free Mobile App</li>
+            </ul>
+          </div>
+          <div class="box box4">
+            <ul>
+              <h3>Spotify Plans</h3>
+              <li>Premium Individual</li>
+              <li>Premium Duo</li>
+              <li>Premium Family</li>
+              <li>Premium Student</li>
+              <li>Spotify Free</li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="box box5">
+            <div class="social flex">
+                <button class="invert"><img src="svg/insta-logo.svg" alt="insta logo"></button>
+                <button class="invert"><img  src="svg/twitter-logo.svg" alt="insta logo"></button>
+                <button class="invert"><img src="svg/facebook-logo.svg" alt="insta logo"></button>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-last">
+            <p>© 2024 Spotify AB</p>
+        </div>
+        <div class="playbar">
+            <div class="songbuttons">
+                <div class="previousSong">
+                    <img class="invert" src="./svg/prevSong.svg" alt="previousSong svg">
+                </div>
+                <div  class="playSong">
+                    <img class="invert" src="./svg/playSong.svg" alt="playSong svg">
+                </div>
+                <div  class="nextSong">
+                    <img class="invert" src="./svg/nextSong.svg" alt="nextSong svg">
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
