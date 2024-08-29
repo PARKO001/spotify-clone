@@ -21,11 +21,22 @@ body{
     width: 75vw;
     height: 100vh;
 }
+.hamburger{
+    display: none;
+}
+.close{
+    display: none;
+}
+.left>.home>.logo img{
+    width: 120px;
+}
 .home{
     padding: 21px;
 }
 .library{
     padding: 21px;
+    /* max-height: 200px; */
+    /* overflow: scroll; */
 }
 .home ul li{
     margin-top: 21px;
@@ -53,6 +64,7 @@ body{
     /* padding: 0 20px; */
     font-size: 15px;
     color: grey;
+    padding-bottom: 100px;
 }
 .songList ul li{
     width: 100%;
@@ -63,6 +75,10 @@ body{
     cursor: pointer;
     padding: 12px;
     border-radius: 10px;
+    color: rgb(221, 221, 221);
+}
+.songList ul li span{
+    color: grey;
 }
 .songList ul li:hover{
     background-color: rgb(29, 29, 29);
@@ -91,11 +107,15 @@ body{
 }
 
 .footer{
+    height: auto;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     font-size: 10px;
     gap: 14px;
     position: absolute;
     bottom: 0;
+    padding-bottom: 30px;
 }
 .footer a{
     color: grey;
@@ -108,7 +128,7 @@ body{
     top: 0px;
     background-color: black;
 }
-.right>.top>.left{
+.right>.top>.outerLeft>.left{
     display: flex;
     align-items: center;
     gap: 30px;
@@ -121,8 +141,14 @@ body{
     height: auto;
     width: auto;
 }
-.right>.top>.left img{
+.right>.top>.outerLeft>.left img{
     height: 16px;
+}
+.outerLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 .btn{
     background-color: white;
@@ -217,36 +243,112 @@ body{
     font-weight: 400;
 }
 .playbar{
-    height: 80px;
-    width: 100%;
+    /* padding: 0 40px; */
     border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: sticky;
     bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: rgb(18 18 18);
     background: linear-gradient(0deg, rgb(14, 14, 14) 0%, rgb(26, 26, 26) 50%, rgb(41, 41, 41) 100%);
+    border-radius: 20px;
 }
-.playbar>.songbuttons{
+.songButtonsBig{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(177, 177, 177);
+    position: relative;
+}
+.playbar>.songButtonsBig>.songinfo{
+    position: absolute;
+    left: 180px;
+}
+.playbar>.songButtonsBig>.songtime{
+    position: absolute;
+    right: 250px;
+}
+.playbar>.songButtonsBig>.songbuttons{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.playbar>.songbuttons div{
+.playbar>.songButtonsBig>.songbuttons div{
     width: 35px;
     height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid black; */
     border-radius: 50%;
 }
-.playbar>.songbuttons div:hover{
+.playbar>.songButtonsBig>.songbuttons div:hover{
     background-color: rgb(66, 66, 66);
 }
-.playbar>.songbuttons img{
+.playbar>.songButtonsBig>.songbuttons img{
     width: 20px;
     height: 20px;
+}
+.seekBar{
+    height: 2px;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.seekBar>.circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    transition: left 0.5s;
+    position: absolute;
+    top: -3px;
+    left: 0%;
+}
+.songButtonsBig{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.songbuttons div{
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .container>.left{
+        background-color: black;
+        position: absolute;
+        left: -100%;
+        transition: all .3s;
+        z-index: 1;
+        width: 320px;
+    }
+    .right{
+        width: 100vw;
+    }
+    .hamburger{
+        display: block;
+        /* position: absolute; */
+        top: 0px;
+        left: 0px;
+    }
+    .close{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    /* .playbar{
+        width: ;
+
+    } */
 }
