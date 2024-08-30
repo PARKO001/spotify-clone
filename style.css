@@ -90,6 +90,9 @@ body{
     display: flex;
     gap: 15px;
 }
+.fist>.name{
+    word-break: break-all;
+}
 .playNow{
     height: 30px;
     width: 30px;
@@ -265,9 +268,32 @@ body{
     position: absolute;
     left: 180px;
 }
-.playbar>.songButtonsBig>.songtime{
+/* .playbar>.songButtonsBig>.songtime{
     position: absolute;
     right: 250px;
+} */
+.playbar>.songButtonsBig>.timeNvolume{
+    position: absolute;
+    right: 120px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.timeNvolume>.songvolume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timeNvolume .songvolume .range{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timeNvolume .songvolume .range input{
+    width: 80px;
+    height: 5px;
+    cursor: pointer;
+    visibility: hidden;
 }
 .playbar>.songButtonsBig>.songbuttons{
     display: flex;
@@ -327,10 +353,14 @@ body{
     .container>.left{
         background-color: black;
         position: absolute;
-        left: -100%;
+        left: -110%;
         transition: all .3s;
         z-index: 1;
         width: 320px;
+        padding: 0;
+    }
+    .container{
+        margin: 0;
     }
     .right{
         width: 100vw;
