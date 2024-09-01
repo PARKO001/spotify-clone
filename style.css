@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --a: 0;
+}
 *{
  margin: 0;
  padding: 0;
@@ -179,9 +183,17 @@ body{
 }
 .card{
     width: 160px;
-    height: 200px;
-    padding: 5px;
+    height: 220px;
+    padding: 5px 5px 20px 5px;
     border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.03);
+    /* opacity: 0.8; */
+    background-color: rgb(36, 36, 36);
+    --a: 1;
 }
 .card img{
     width: 150px;
@@ -195,6 +207,29 @@ body{
 .card p{
     font-size: 12px;
     color: rgb(179,179,178);
+}
+.card>.play{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 95px;
+    right: 12px;
+    border-radius: 50%;
+    background-color: rgb(31,215,97);
+    opacity: 0;
+    transition: all 0.2s ease-out;
+    opacity: var(--a);
+}
+.card>.play:hover{
+    background-color: rgb(65, 230, 125);
+    scale: 1.05;
+}
+.card>.play img{ 
+    width: 25px;
+    height: 25px;
 }
 .box h3{
     font-size: 17px;
